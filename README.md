@@ -1,2 +1,2 @@
-#EE2020 Project
-##SIgnal Generator
+# EE2020 Project
+## Signal Generator
