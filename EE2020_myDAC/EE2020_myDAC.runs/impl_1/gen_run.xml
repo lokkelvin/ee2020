@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1491227966">
+  <File Type="ROUTE-PWR-RPX" Name="myDAC_TOP_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="myDAC_TOP.tcl"/>
+  <File Type="INIT-TIMING" Name="myDAC_TOP_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="myDAC_TOP_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="myDAC_TOP_drc_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="myDAC_TOP.vdi"/>
+  <File Type="OPT-DCP" Name="myDAC_TOP_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="myDAC_TOP.hwdef"/>
+  <File Type="OPT-DRC" Name="myDAC_TOP_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="myDAC_TOP_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="myDAC_TOP_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="myDAC_TOP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="myDAC_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="myDAC_TOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="myDAC_TOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="myDAC_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="myDAC_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="myDAC_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="myDAC_TOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="myDAC_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="myDAC_TOP_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="myDAC_TOP_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="myDAC_TOP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="myDAC_TOP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="myDAC_TOP_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="myDAC_TOP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="myDAC_TOP_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="myDAC_TOP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="myDAC_TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="myDAC_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="myDAC_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="myDAC_TOP_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="myDAC_TOP.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="myDAC_TOP_methodology_drc_routed.rpt"/>
+  <File Type="BG-DRC" Name="myDAC_TOP.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="myDAC_TOP_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="myDAC_TOP.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="myDAC_TOP_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="myDAC_TOP.bgn"/>
+  <File Type="ROUTE-PWR" Name="myDAC_TOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="myDAC_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="myDAC_TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="myDAC_TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="myDAC_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="myDAC_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="myDAC_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="myDAC_TOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="myDAC_TOP_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="myDAC_TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="myDAC_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="myDAC_TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="myDAC_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="myDAC_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="myDAC_TOP.bit"/>
+  <File Type="BITSTR-RBT" Name="myDAC_TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="myDAC_TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="myDAC_TOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="myDAC_TOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="myDAC_TOP.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/d_flipflop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/d_flipflop.v"/>
+        <Attr Name="ImportTime" Val="1488959360"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BCD.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/BCD.v"/>
+        <Attr Name="ImportTime" Val="1489000661"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_hi_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_hi_wave.v"/>
+        <Attr Name="ImportTime" Val="1491073844"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_sin_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sin_wave.v"/>
+        <Attr Name="ImportTime" Val="1490933825"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider_custom_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_custom_wave.v"/>
+        <Attr Name="ImportTime" Val="1490863515"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_trapezium_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_trapezium_wave.v"/>
+        <Attr Name="ImportTime" Val="1490988180"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_sawtooth_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sawtooth_wave.v"/>
+        <Attr Name="ImportTime" Val="1490813165"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ssd_controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/ssd_controller.v"/>
+        <Attr Name="ImportTime" Val="1488984742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ssd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/ssd.v"/>
+        <Attr Name="ImportTime" Val="1488985706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_sine_AM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v"/>
+        <Attr Name="ImportTime" Val="1491070654"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/operation_invert_vertical.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_invert_vertical.v"/>
+        <Attr Name="ImportTime" Val="1490122064"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/operation_squarefy_invert.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_squarefy_invert.v"/>
+        <Attr Name="ImportTime" Val="1490120876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/operation_squarefy.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_squarefy.v"/>
+        <Attr Name="ImportTime" Val="1490636840"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_freq_n_amp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/display_freq_n_amp.v"/>
+        <Attr Name="ImportTime" Val="1490115611"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_half_rectified_sine.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_half_rectified_sine.v"/>
+        <Attr Name="ImportTime" Val="1490629234"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider_samp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../EE2020_myDAC.srcs/sources_1/new/clock_divider_samp.v"/>
+        <Attr Name="ImportTime" Val="1489046532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider_ssd.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_ssd.v"/>
+        <Attr Name="ImportTime" Val="1489653765"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_tri_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_wave.v"/>
+        <Attr Name="ImportTime" Val="1489652817"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1489048372"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_square_wave.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_square_wave.v"/>
+        <Attr Name="ImportTime" Val="1489073510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/SourceFiles/DA2RefComp.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../Xilinx/DJ/EE2020_Template/EE2020_Template.srcs/sources_1/imports/sources_1/imports/SourceFiles/DA2RefComp.vhd"/>
+        <Attr Name="ImportTime" Val="1475398782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider_slower.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_slower.v"/>
+        <Attr Name="ImportTime" Val="1489068963"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider_half.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_half.v"/>
+        <Attr Name="ImportTime" Val="1489046516"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider.v"/>
+        <Attr Name="ImportTime" Val="1489047763"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/change_wave_freq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_freq.v"/>
+        <Attr Name="ImportTime" Val="1489069637"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/change_wave_amp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v"/>
+        <Attr Name="ImportTime" Val="1489067049"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alphanum_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v"/>
+        <Attr Name="ImportTime" Val="1489074333"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_exp_bound_sine.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_exp_bound_sine.v"/>
+        <Attr Name="ImportTime" Val="1490936220"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/myDAC_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../Xilinx/DJ/EE2020_Template/EE2020_Template.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v"/>
+        <Attr Name="ImportTime" Val="1488728453"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_tri_square_wave.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_square_wave.v"/>
+        <Attr Name="ImportTime" Val="1489665743"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_ramp_square_wave.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_ramp_square_wave.v"/>
+        <Attr Name="ImportTime" Val="1489676490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/operation_sinefy.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_sinefy.v"/>
+        <Attr Name="ImportTime" Val="1490706569"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_twenty.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../EE2020_myDAC.srcs/sources_1/new/clock_twenty.v"/>
+        <Attr Name="ImportTime" Val="1488961924"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divider_var.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_var.v"/>
+        <Attr Name="ImportTime" Val="1489586008"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_combine_sine_ramp.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_combine_sine_ramp.v"/>
+        <Attr Name="ImportTime" Val="1490164843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_controller.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/vga_controller.v"/>
+        <Attr Name="ImportTime" Val="1490630488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/EE2020_myDAC/archive_project_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../archive_project_summary.txt"/>
+        <Attr Name="ImportTime" Val="1491164942"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="myDAC_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/_solution_files/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../Xilinx/DJ/EE2020_Template/EE2020_Template.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1488728037"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_1"/>
+</GenRun>

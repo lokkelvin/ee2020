@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 22:11:03 2017
+# Process ID: 5932
+# Current directory: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19516 D:\Desktop\MyWork\EE2020_myDAC_square_gen_working.xpr\EE2020_myDAC_monday morning.xpr\EE2020_myDAC\EE2020_myDAC.xpr
+# Log file: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/vivado.log
+# Journal file: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.xpr}
+set_property is_enabled false [get_files  {{D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_ramp_square_wave.v} {D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_square_wave.v}}]
+archive_project {D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/Project_Wednesday_LokHanWeiKelvin_A0149890N.xpr.zip} -temp_dir {D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/.Xil/Vivado-5932-BLACK-LAPTOP} -force -include_config_settings

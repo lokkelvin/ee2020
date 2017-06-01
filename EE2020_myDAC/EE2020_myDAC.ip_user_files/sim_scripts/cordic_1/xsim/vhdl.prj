@@ -1,0 +1,4 @@
+vhdl xbip_dsp48_wrapper_v3_0_4 "../../../ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" 
+vhdl xil_defaultlib "../../../../EE2020_myDAC.srcs/sources_1/ip/cordic_1/sim/cordic_1.vhd" 
+
+nosort

@@ -1,0 +1,1436 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Apr 03 21:59:27 2017
+# Process ID: 2120
+# Current directory: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1
+# Command line: vivado.exe -log myDAC_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source myDAC_TOP.tcl
+# Log file: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/myDAC_TOP.vds
+# Journal file: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source myDAC_TOP.tcl -notrace
+Command: synth_design -top myDAC_TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18972 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.516 ; gain = 72.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'myDAC_TOP' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:5]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_half' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_half.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_half' (1#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_half.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_slower' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_slower.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_slower' (2#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_slower.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_ssd' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_ssd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_ssd' (3#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_ssd.v:23]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/debouncer.v:22]
+INFO: [Synth 8-638] synthesizing module 'd_flipflop' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/d_flipflop.v:24]
+INFO: [Synth 8-256] done synthesizing module 'd_flipflop' (4#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/d_flipflop.v:24]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (5#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/debouncer.v:22]
+INFO: [Synth 8-638] synthesizing module 'change_wave_freq' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_freq.v:24]
+	Parameter _MAXFREQ bound to: 200000 - type: integer 
+	Parameter _MINFREQ bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'change_wave_freq' (6#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_freq.v:24]
+INFO: [Synth 8-638] synthesizing module 'change_wave_amp' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:23]
+	Parameter voltage_stepsize1 bound to: 124 - type: integer 
+	Parameter voltage_stepsize2 bound to: 248 - type: integer 
+	Parameter voltage_stepsize3 bound to: 1241 - type: integer 
+	Parameter _MAXPIVOT bound to: 511 - type: integer 
+	Parameter _MINPIVOT bound to: 0 - type: integer 
+WARNING: [Synth 8-3936] Found unconnected internal register 'voltmaxtemp_reg' and it is trimmed from '28' to '12' bits. [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:195]
+WARNING: [Synth 8-3936] Found unconnected internal register 'voltmaxtemp2_reg' and it is trimmed from '28' to '12' bits. [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:202]
+WARNING: [Synth 8-3936] Found unconnected internal register 'voltmintemp_reg' and it is trimmed from '28' to '12' bits. [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:196]
+WARNING: [Synth 8-3936] Found unconnected internal register 'voltmintemp2_reg' and it is trimmed from '28' to '12' bits. [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:203]
+INFO: [Synth 8-256] done synthesizing module 'change_wave_amp' (7#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_samp' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_samp.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_samp' (8#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_samp.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_custom_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_custom_wave.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_custom_wave' (9#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider_custom_wave.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider.v:21]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (10#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/clock_divider.v:21]
+WARNING: [Synth 8-689] width (32) of port connection 'waveform_freq' does not match port width (28) of module 'clock_divider_custom_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:164]
+WARNING: [Synth 8-689] width (16) of port connection 'waveform_freq' does not match port width (28) of module 'clock_divider' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:165]
+WARNING: [Synth 8-689] width (32) of port connection 'waveform_freq' does not match port width (28) of module 'clock_divider_custom_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:172]
+INFO: [Synth 8-638] synthesizing module 'gen_square_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_square_wave.v:23]
+	Parameter start bound to: 0 - type: integer 
+	Parameter last bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_square_wave' (11#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_square_wave.v:23]
+INFO: [Synth 8-638] synthesizing module 'gen_sawtooth_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sawtooth_wave.v:23]
+	Parameter start bound to: 0 - type: integer 
+	Parameter last bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_sawtooth_wave' (12#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sawtooth_wave.v:23]
+INFO: [Synth 8-638] synthesizing module 'gen_tri_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_wave.v:23]
+INFO: [Synth 8-256] done synthesizing module 'gen_tri_wave' (13#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_wave.v:23]
+INFO: [Synth 8-638] synthesizing module 'gen_sin_wave2' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sin_wave.v:102]
+	Parameter start bound to: 0 - type: integer 
+	Parameter last bound to: 511 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cordic_1' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/realtime/cordic_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cordic_1' (14#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/realtime/cordic_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'gen_sin_wave2' (15#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sin_wave.v:102]
+WARNING: [Synth 8-689] width (28) of port connection 'freqwire' does not match port width (12) of module 'gen_sin_wave2' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:181]
+INFO: [Synth 8-638] synthesizing module 'gen_half_rectified_sine' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_half_rectified_sine.v:23]
+INFO: [Synth 8-256] done synthesizing module 'gen_half_rectified_sine' (16#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_half_rectified_sine.v:23]
+INFO: [Synth 8-638] synthesizing module 'gen_trapezium_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_trapezium_wave.v:23]
+	Parameter start bound to: 0 - type: integer 
+	Parameter A bound to: 127 - type: integer 
+	Parameter B bound to: 255 - type: integer 
+	Parameter C bound to: 383 - type: integer 
+	Parameter last bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_trapezium_wave' (17#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_trapezium_wave.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'outputwave' does not match port width (12) of module 'gen_sawtooth_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:187]
+INFO: [Synth 8-638] synthesizing module 'gen_sin_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_exp_bound_sine.v:39]
+INFO: [Synth 8-256] done synthesizing module 'gen_sin_wave' (18#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_exp_bound_sine.v:39]
+INFO: [Synth 8-638] synthesizing module 'gen_hi_wave' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_hi_wave.v:23]
+	Parameter start bound to: 0 - type: integer 
+	Parameter last bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_hi_wave' (19#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_hi_wave.v:23]
+INFO: [Synth 8-638] synthesizing module 'gen_sine_AM' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'gen_sine_AM' (20#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:23]
+INFO: [Synth 8-638] synthesizing module 'gen_sine_AM_two' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:71]
+INFO: [Synth 8-256] done synthesizing module 'gen_sine_AM_two' (21#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:71]
+INFO: [Synth 8-638] synthesizing module 'operation_squarefy' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_squarefy.v:23]
+INFO: [Synth 8-256] done synthesizing module 'operation_squarefy' (22#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_squarefy.v:23]
+INFO: [Synth 8-638] synthesizing module 'operation_squarefy_invert' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_squarefy_invert.v:23]
+INFO: [Synth 8-256] done synthesizing module 'operation_squarefy_invert' (23#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_squarefy_invert.v:23]
+INFO: [Synth 8-638] synthesizing module 'operation_invert_vertical' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_invert_vertical.v:23]
+INFO: [Synth 8-256] done synthesizing module 'operation_invert_vertical' (24#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/operation_invert_vertical.v:23]
+INFO: [Synth 8-638] synthesizing module 'display_freq_n_amp' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/display_freq_n_amp.v:23]
+INFO: [Synth 8-256] done synthesizing module 'display_freq_n_amp' (25#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/display_freq_n_amp.v:23]
+WARNING: [Synth 8-689] width (28) of port connection 'freqwire' does not match port width (12) of module 'display_freq_n_amp' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:232]
+WARNING: [Synth 8-689] width (28) of port connection 'freqwire' does not match port width (12) of module 'display_freq_n_amp' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:234]
+INFO: [Synth 8-638] synthesizing module 'ssd_anode' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/ssd_controller.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ssd_anode' (26#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/ssd_controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'alphanum_mux' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/BCD.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BCD' (27#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/BCD.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:105]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:106]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:107]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:108]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:109]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:110]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:111]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:112]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:114]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:115]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:116]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:117]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:118]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:119]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:120]
+WARNING: [Synth 8-689] width (12) of port connection 'binary' does not match port width (13) of module 'BCD' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:121]
+INFO: [Synth 8-256] done synthesizing module 'alphanum_mux' (28#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/alphanum_mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'ssd_cathode' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/ssd.v:24]
+INFO: [Synth 8-256] done synthesizing module 'ssd_cathode' (29#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/ssd.v:24]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/imports/SourceFiles/DA2RefComp.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (30#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/imports/SourceFiles/DA2RefComp.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'myDAC_TOP' (31#1) [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/imports/sources_1/new/myDAC_TOP.v:5]
+WARNING: [Synth 8-3331] design ssd_cathode has unconnected port sw12
+WARNING: [Synth 8-3331] design ssd_anode has unconnected port sw1
+WARNING: [Synth 8-3331] design ssd_anode has unconnected port sw2
+WARNING: [Synth 8-3331] design gen_sin_wave has unconnected port sin_or_cos
+WARNING: [Synth 8-3331] design gen_sine_AM has unconnected port sin_or_cos
+WARNING: [Synth 8-3331] design gen_sin_wave2 has unconnected port sin_or_cos
+WARNING: [Synth 8-3331] design change_wave_amp has unconnected port CLOCK
+WARNING: [Synth 8-3331] design change_wave_amp has unconnected port sw13
+WARNING: [Synth 8-3331] design myDAC_TOP has unconnected port sw6
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 323.453 ; gain = 113.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 323.453 ; gain = 113.422
+---------------------------------------------------------------------------------
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'cordic_1' instantiated as 'sinwavedutycycle1/cordic_sin'. 11 instances of this cell are unresolved black boxes. [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sin_wave.v:159]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinwavedutycycle1/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinwavedutycycle1/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'rectsinwave1/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'rectsinwave1/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinwave22/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinwave22/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'rectsinwave22/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'rectsinwave22/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'fastsine1/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'fastsine1/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'fastsine2/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'fastsine2/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinaddsin/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinaddsin/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinboundsin/cordic_sin_slowerup'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinboundsin/cordic_sin_slowerup'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinboundsin/cordic_sin_slowerdown'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinboundsin/cordic_sin_slowerdown'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinboundsin/cordic_sin_faster'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinboundsin/cordic_sin_faster'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinefy/cordic_sin'
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/.Xil/Vivado-2120-BLACK-LAPTOP/dcp/cordic_1_in_context.xdc] for cell 'sinefy/cordic_sin'
+Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/constrs_1/imports/_solution_files/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/myDAC_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/myDAC_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 634.734 ; gain = 0.008
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 634.734 ; gain = 424.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 634.734 ; gain = 424.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 634.734 ; gain = 424.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "outputclock0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputclock20" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputclock0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputclock20" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "stepsize0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stepsize0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stepsize0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_wave.v:32]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_tri_wave.v:32]
+INFO: [Synth 8-5546] ROM "direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "phasefreqclock0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:154]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:154]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:154]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "one_second_up_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                shiftout |                               01 |                               01
+                syncdata |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 634.734 ; gain = 424.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |gen_sawtooth_wave |           2|     10565|
+|2     |myDAC_TOP__GCB0   |           1|     18500|
+|3     |myDAC_TOP__GCB1   |           1|      6266|
+|4     |myDAC_TOP__GCB2   |           1|      5052|
+|5     |myDAC_TOP__GCB3   |           1|     18293|
+|6     |myDAC_TOP__GCB4   |           1|     10490|
+|7     |myDAC_TOP__GCB5   |           1|      6119|
+|8     |myDAC_TOP__GCB6   |           1|     15705|
+|9     |myDAC_TOP__GCB7   |           1|     10434|
+|10    |myDAC_TOP__GCB8   |           1|     10405|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 18    
+	   2 Input     32 Bit       Adders := 13    
+	   2 Input     29 Bit       Adders := 2     
+	   3 Input     28 Bit       Adders := 4     
+	   2 Input     28 Bit       Adders := 4     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 9     
+	   3 Input     13 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 11    
+	   3 Input     12 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 9     
+	   2 Input      8 Bit       Adders := 24    
+	   2 Input      4 Bit       Adders := 481   
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 5     
+	               21 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 24    
+	               10 Bit    Registers := 11    
+	                8 Bit    Registers := 15    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 38    
++---Multipliers : 
+	                12x32  Multipliers := 2     
+	                28x28  Multipliers := 1     
+	                 8x28  Multipliers := 2     
+	                12x28  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   2 Input     28 Bit        Muxes := 11    
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 97    
+	   2 Input     12 Bit        Muxes := 47    
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 9     
+	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 353   
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module myDAC_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                28x28  Multipliers := 1     
+	                 8x28  Multipliers := 2     
+	                12x28  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 3     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module gen_sawtooth_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+Module gen_trapezium_wave__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 1     
+Module DA2RefComp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module gen_sin_wave2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module gen_sine_AM_two 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 6     
++---Registers : 
+	               21 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
++---Multipliers : 
+	                12x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+Module gen_square_wave__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+Module clock_divider__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider_custom_wave__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gen_tri_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module gen_sine_AM 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module gen_sin_wave__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module gen_sin_wave__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module gen_hi_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+Module gen_half_rectified_sine__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module display_freq_n_amp__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module BCD__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 30    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 22    
+Module alphanum_mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  15 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+Module change_wave_amp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     28 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 6     
+	   3 Input     13 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 6     
+	               12 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 97    
+	   4 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 25    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module display_freq_n_amp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module gen_square_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+Module gen_sin_wave__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module change_wave_freq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 2     
+	   3 Input     28 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 10    
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module gen_trapezium_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 1     
+Module gen_half_rectified_sine 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module clock_divider__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider_custom_wave__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider_custom_wave__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module operation_squarefy 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module operation_squarefy_invert 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module operation_invert_vertical 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+Module gen_sin_wave 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+Module clock_divider_samp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module d_flipflop__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ssd_anode 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module d_flipflop__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module d_flipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider_ssd 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider_slower 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider_half 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module clock_divider_custom_wave__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider_custom_wave__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider_custom_wave__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider_custom_wave 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "direction" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "direction" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP outputwave2, operation Mode is: C+A*B.
+DSP Report: operator outputwave2 is absorbed into DSP outputwave2.
+DSP Report: operator outputwave3 is absorbed into DSP outputwave2.
+DSP Report: Generating DSP p_1_out, operation Mode is: C+A*B+CarryIn.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP outputwave, operation Mode is: C+A*B.
+DSP Report: operator outputwave is absorbed into DSP outputwave.
+DSP Report: operator outputwave0 is absorbed into DSP outputwave.
+DSP Report: Generating DSP outputwave, operation Mode is: C+A*B.
+DSP Report: operator outputwave is absorbed into DSP outputwave.
+DSP Report: operator outputwave0 is absorbed into DSP outputwave.
+DSP Report: Generating DSP fastsine2/outputwave, operation Mode is: C+A*B.
+DSP Report: operator fastsine2/outputwave is absorbed into DSP fastsine2/outputwave.
+DSP Report: operator fastsine2/outputwave0 is absorbed into DSP fastsine2/outputwave.
+DSP Report: Generating DSP fastsine1/outputwave, operation Mode is: C+A*B.
+DSP Report: operator fastsine1/outputwave is absorbed into DSP fastsine1/outputwave.
+DSP Report: operator fastsine1/outputwave0 is absorbed into DSP fastsine1/outputwave.
+DSP Report: Generating DSP rectsinwave22/outputwave, operation Mode is: C+A*B.
+DSP Report: operator rectsinwave22/outputwave is absorbed into DSP rectsinwave22/outputwave.
+DSP Report: operator rectsinwave22/outputwave0 is absorbed into DSP rectsinwave22/outputwave.
+WARNING: [Synth 8-3331] design myDAC_TOP has unconnected port sw6
+INFO: [Synth 8-4471] merging register 'count_reg[9:0]' into 'count_reg[9:0]' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sawtooth_wave.v:49]
+DSP Report: Generating DSP outputwave_reg, operation Mode is: (C+A*B2)'.
+DSP Report: register count_reg is absorbed into DSP outputwave_reg.
+DSP Report: register outputwave_reg is absorbed into DSP outputwave_reg.
+DSP Report: operator outputwave0 is absorbed into DSP outputwave_reg.
+DSP Report: operator outputwave1 is absorbed into DSP outputwave_reg.
+INFO: [Synth 8-5545] ROM "phasefreqclock0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+DSP Report: Generating DSP outputwave, operation Mode is: C+A*B.
+DSP Report: operator outputwave is absorbed into DSP outputwave.
+DSP Report: operator outputwave0 is absorbed into DSP outputwave.
+DSP Report: Generating DSP desiredfreq1, operation Mode is: A*B.
+DSP Report: operator desiredfreq1 is absorbed into DSP desiredfreq1.
+DSP Report: Generating DSP desiredfreq1, operation Mode is: A*B.
+DSP Report: operator desiredfreq1 is absorbed into DSP desiredfreq1.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/gen_sine_AM.v:154]
+DSP Report: Generating DSP sinboundsin/lower2, operation Mode is: A*B.
+DSP Report: operator sinboundsin/lower2 is absorbed into DSP sinboundsin/lower2.
+DSP Report: Generating DSP sinboundsin/upper2, operation Mode is: A*B.
+DSP Report: operator sinboundsin/upper2 is absorbed into DSP sinboundsin/upper2.
+DSP Report: Generating DSP sinboundsin/dumplingwave2, operation Mode is: A*B.
+DSP Report: operator sinboundsin/dumplingwave2 is absorbed into DSP sinboundsin/dumplingwave2.
+DSP Report: Generating DSP sinboundsin/flippingwave2, operation Mode is: A*B.
+DSP Report: operator sinboundsin/flippingwave2 is absorbed into DSP sinboundsin/flippingwave2.
+WARNING: [Synth 8-3331] design gen_sin_wave2 has unconnected port sin_or_cos
+WARNING: [Synth 8-3331] design gen_trapezium_wave__1 has unconnected port pivot[1]
+WARNING: [Synth 8-3331] design gen_trapezium_wave__1 has unconnected port pivot[0]
+INFO: [Synth 8-3886] merging instance 'sinboundsin/upper_reg[13]' (FD) to 'sinboundsin/lower_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sinboundsin/lower_reg[13] )
+INFO: [Synth 8-4471] merging register 'Vmintemp_reg[12:0]' into 'Vmintemp_reg[12:0]' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:84]
+INFO: [Synth 8-4471] merging register 'Vmintemp2_reg[12:0]' into 'Vmintemp2_reg[12:0]' [D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.srcs/sources_1/new/change_wave_amp.v:87]
+DSP Report: Generating DSP voltmaxtemp3, operation Mode is: A*(B:0x3e8).
+DSP Report: operator voltmaxtemp3 is absorbed into DSP voltmaxtemp3.
+DSP Report: Generating DSP voltmaxtemp1, operation Mode is: (A:0xce4)*B.
+DSP Report: operator voltmaxtemp1 is absorbed into DSP voltmaxtemp1.
+DSP Report: Generating DSP voltmintemp3, operation Mode is: A2*(B:0x3e8).
+DSP Report: register Vmintemp_reg is absorbed into DSP voltmintemp3.
+DSP Report: operator voltmintemp3 is absorbed into DSP voltmintemp3.
+DSP Report: Generating DSP voltmintemp1, operation Mode is: (A:0xce4)*B.
+DSP Report: operator voltmintemp1 is absorbed into DSP voltmintemp1.
+DSP Report: Generating DSP voltmaxtemp23, operation Mode is: A*(B:0x3e8).
+DSP Report: operator voltmaxtemp23 is absorbed into DSP voltmaxtemp23.
+DSP Report: Generating DSP voltmaxtemp21, operation Mode is: (A:0xce4)*B.
+DSP Report: operator voltmaxtemp21 is absorbed into DSP voltmaxtemp21.
+DSP Report: Generating DSP voltmintemp23, operation Mode is: A2*(B:0x3e8).
+DSP Report: register Vmintemp2_reg is absorbed into DSP voltmintemp23.
+DSP Report: operator voltmintemp23 is absorbed into DSP voltmintemp23.
+DSP Report: Generating DSP voltmintemp21, operation Mode is: (A:0xce4)*B.
+DSP Report: operator voltmintemp21 is absorbed into DSP voltmintemp21.
+WARNING: [Synth 8-3331] design change_wave_amp has unconnected port CLOCK
+WARNING: [Synth 8-3331] design change_wave_amp has unconnected port sw13
+INFO: [Synth 8-5545] ROM "outputclock0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "outputclock20" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+DSP Report: Generating DSP stepsize0, operation Mode is: (0 or C)+(A*(B:0x64) or 0).
+DSP Report: operator stepsize0 is absorbed into DSP stepsize0.
+DSP Report: Generating DSP sinwave22/outputwave, operation Mode is: C+A*B.
+DSP Report: operator sinwave22/outputwave is absorbed into DSP sinwave22/outputwave.
+DSP Report: operator sinwave22/outputwave0 is absorbed into DSP sinwave22/outputwave.
+WARNING: [Synth 8-3332] Sequential element (count_reg[0]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[1]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[2]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[3]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[4]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[5]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[6]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[7]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[8]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[9]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[10]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[11]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[12]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[13]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[14]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[15]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[16]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[17]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[18]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[19]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[20]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[21]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[22]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[23]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[24]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[25]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[26]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count_reg[27]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (outputclock_reg) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[0]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[1]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[2]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[3]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[4]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[5]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[6]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[7]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[8]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[9]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[10]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[11]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[12]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[13]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[14]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[15]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[16]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[17]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[18]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[19]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[20]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[21]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[22]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[23]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[24]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[25]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[26]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (count2_reg[27]) is unused and will be removed from module change_wave_freq.
+WARNING: [Synth 8-3332] Sequential element (outputclock2_reg) is unused and will be removed from module change_wave_freq.
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+DSP Report: Generating DSP outputwave, operation Mode is: C+A*B.
+DSP Report: operator outputwave is absorbed into DSP outputwave.
+DSP Report: operator outputwave0 is absorbed into DSP outputwave.
+INFO: [Synth 8-5545] ROM "one_second_up_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cd1/SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design ssd_cathode has unconnected port sw12
+WARNING: [Synth 8-3331] design gen_sin_wave has unconnected port sin_or_cos
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[27]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[26]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[25]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[24]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[23]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[22]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[21]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[20]
+WARNING: [Synth 8-3331] design clock_divider__3 has unconnected port waveform_freq[19]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[27]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[26]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[25]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[24]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[23]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[22]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[21]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[20]
+WARNING: [Synth 8-3331] design clock_divider__2 has unconnected port waveform_freq[19]
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[0]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[1]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[2]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[3]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[4]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[5]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[6]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[7]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[8]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[9]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[10]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[11]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[12]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[13]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[14]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[15]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[16]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[17]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[18]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[19]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[20]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[21]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[22]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[23]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[24]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[25]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[26]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (COUNT_reg[27]) is unused and will be removed from module clock_divider__2.
+WARNING: [Synth 8-3332] Sequential element (SAMP_CLOCK_reg) is unused and will be removed from module clock_divider__2.
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[27]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[26]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[25]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[24]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[23]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[22]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[21]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[20]
+WARNING: [Synth 8-3331] design clock_divider__4 has unconnected port waveform_freq[19]
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SAMP_CLOCK0" won't be mapped to RAM because address size (28) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[27]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[26]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[25]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[24]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[23]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[22]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[21]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[20]
+WARNING: [Synth 8-3331] design clock_divider has unconnected port waveform_freq[19]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:55 . Memory (MB): peak = 634.734 ; gain = 424.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping                | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|gen_tri_wave            | C+A*B                      | 12     | 12     | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_tri_wave            | C+A*B+CarryIn              | 12     | 10     | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sine_AM             | C+A*B                      | 12     | 8      | 11     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_half_rectified_sine | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sin_wave            | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sin_wave            | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_half_rectified_sine | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sawtooth_wave       | (C+A*B2)'                  | 12     | 10     | 12     | -      | 12     | 0    | 1    | 0    | -    | -     | 0    | 1    | 
+|gen_sin_wave2           | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sin_wave2           | A*B                        | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gen_sin_wave2           | A*B                        | 16     | 12     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gen_sine_AM_two         | A*B                        | 11     | 8      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|gen_sine_AM_two         | A*B                        | 11     | 8      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myDAC_TOP__GCB0         | A*B                        | 24     | 12     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myDAC_TOP__GCB0         | A*B                        | 24     | 12     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | A*(B:0x3e8)                | 13     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | (A:0xce4)*B                | 11     | 12     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | A2*(B:0x3e8)               | 13     | 10     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | (A:0xce4)*B                | 11     | 12     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | A*(B:0x3e8)                | 13     | 10     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | (A:0xce4)*B                | 11     | 12     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | A2*(B:0x3e8)               | 13     | 10     | -      | -      | 23     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_amp         | (A:0xce4)*B                | 11     | 12     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|change_wave_freq        | (0 or C)+(A*(B:0x64) or 0) | 12     | 7      | 12     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sin_wave            | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|gen_sin_wave            | C+A*B                      | 12     | 8      | 12     | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |gen_sawtooth_wave |           2|      3503|
+|2     |myDAC_TOP__GCB0   |           1|      9570|
+|3     |myDAC_TOP__GCB1   |           1|      3058|
+|4     |myDAC_TOP__GCB2   |           1|      1986|
+|5     |myDAC_TOP__GCB3   |           1|     11357|
+|6     |myDAC_TOP__GCB4   |           1|      1868|
+|7     |myDAC_TOP__GCB5   |           1|      2900|
+|8     |myDAC_TOP__GCB6   |           1|      4473|
+|9     |myDAC_TOP__GCB7   |           1|      1895|
+|10    |myDAC_TOP__GCB8   |           1|      4673|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:09 . Memory (MB): peak = 743.309 ; gain = 533.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:15 . Memory (MB): peak = 787.379 ; gain = 577.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |gen_sawtooth_wave    |           1|      3503|
+|2     |myDAC_TOP__GCB0      |           1|      9570|
+|3     |myDAC_TOP__GCB1      |           1|      3058|
+|4     |myDAC_TOP__GCB2      |           1|      1986|
+|5     |myDAC_TOP__GCB3      |           1|     11344|
+|6     |myDAC_TOP__GCB4      |           1|      1868|
+|7     |myDAC_TOP__GCB5      |           1|      2900|
+|8     |myDAC_TOP__GCB6      |           1|      4473|
+|9     |myDAC_TOP__GCB7      |           1|      1895|
+|10    |myDAC_TOP__GCB8      |           1|      4673|
+|11    |gen_sawtooth_wave__1 |           1|      3502|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:1: invalid command "% Total % Received % Xferd Average Speed Time Time Time Current"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:2: invalid command "Dload Upload Total Spent Left Speed"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:4: invalid command "0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:5: invalid command "100 176 100 176 0 0 304 0 --:--:-- --:--:-- --:--:-- 304<html>"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:6: invalid command "<head>"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:7: invalid command "<meta http-equiv=\"Content-Type\" content=\"text/html"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:8: invalid command "<META HTTP-EQUIV=refresh CONTENT=\"0"
+warning: D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday:10: invalid command "curl: (6) Could not resolve host: morning.xpr"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:32 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |myDAC_TOP__GCB3 |           1|      3786|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:36 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:36 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:39 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:39 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:40 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:40 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|myDAC_TOP   | u1/temp1_reg[15] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|myDAC_TOP   | u1/temp2_reg[15] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cordic_1      |        11|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |cordic_1     |     1|
+|2     |cordic_1__10 |     1|
+|3     |cordic_1__11 |     1|
+|4     |cordic_1__12 |     1|
+|5     |cordic_1__13 |     1|
+|6     |cordic_1__14 |     1|
+|7     |cordic_1__5  |     1|
+|8     |cordic_1__6  |     1|
+|9     |cordic_1__7  |     1|
+|10    |cordic_1__8  |     1|
+|11    |cordic_1__9  |     1|
+|12    |BUFG         |     8|
+|13    |CARRY4       |  4417|
+|14    |DSP48E1      |     1|
+|15    |DSP48E1_1    |     3|
+|16    |DSP48E1_2    |    20|
+|17    |DSP48E1_3    |     2|
+|18    |LUT1         |  1802|
+|19    |LUT2         |  2904|
+|20    |LUT3         | 12097|
+|21    |LUT4         |  1216|
+|22    |LUT5         |  1080|
+|23    |LUT6         |  1502|
+|24    |MUXF7        |    48|
+|25    |MUXF8        |     4|
+|26    |SRL16E       |     2|
+|27    |XORCY        |     6|
+|28    |FDCE         |     1|
+|29    |FDRE         |  1206|
+|30    |FDSE         |    12|
+|31    |IBUF         |    20|
+|32    |OBUF         |    29|
++------+-------------+------+
+
+Report Instance Areas: 
++------+-------------------------+-----------------------------+------+
+|      |Instance                 |Module                       |Cells |
++------+-------------------------+-----------------------------+------+
+|1     |top                      |                             | 26567|
+|2     |  cd1                    |clock_divider_samp           |    73|
+|3     |  cd2                    |clock_divider                |   741|
+|4     |  cd3                    |clock_divider_0              |   618|
+|5     |  cd4                    |clock_divider_1              |   824|
+|6     |  cdh1                   |clock_divider_half           |     3|
+|7     |  cds1                   |clock_divider_slower         |    49|
+|8     |  cdssd1                 |clock_divider_ssd            |    40|
+|9     |  cwa1                   |change_wave_amp              |  7299|
+|10    |  cwf1                   |change_wave_freq             |  1687|
+|11    |  debounce_center        |debouncer                    |    51|
+|12    |    dff1                 |d_flipflop_26                |     8|
+|13    |    dff2                 |d_flipflop_27                |    43|
+|14    |  debounce_down          |debouncer_2                  |    30|
+|15    |    dff1                 |d_flipflop_24                |    29|
+|16    |    dff2                 |d_flipflop_25                |     1|
+|17    |  debounce_left          |debouncer_3                  |     4|
+|18    |    dff1                 |d_flipflop_22                |     3|
+|19    |    dff2                 |d_flipflop_23                |     1|
+|20    |  debounce_right         |debouncer_4                  |     8|
+|21    |    dff1                 |d_flipflop_20                |     7|
+|22    |    dff2                 |d_flipflop_21                |     1|
+|23    |  debounce_up            |debouncer_5                  |    59|
+|24    |    dff1                 |d_flipflop                   |    58|
+|25    |    dff2                 |d_flipflop_19                |     1|
+|26    |  display_freq_amp       |display_freq_n_amp           |    81|
+|27    |  display_freq_amp2      |display_freq_n_amp_6         |    78|
+|28    |  fastsine1              |gen_sin_wave                 |    59|
+|29    |  fastsine2              |gen_sin_wave_7               |   314|
+|30    |  hiwave1                |gen_hi_wave                  |   159|
+|31    |  onehertz               |clock_divider_custom_wave    |   101|
+|32    |  rectsinwave1           |gen_half_rectified_sine      |    48|
+|33    |  rectsinwave22          |gen_half_rectified_sine_8    |    60|
+|34    |  sawtooth1              |gen_sawtooth_wave            |   221|
+|35    |  sawtooth22             |gen_sawtooth_wave_9          |   220|
+|36    |  sin_phase_accumulator  |clock_divider_custom_wave_10 |   977|
+|37    |  sin_phase_accumulator2 |clock_divider_custom_wave_11 |   977|
+|38    |  sinaddsin              |gen_sine_AM                  |   324|
+|39    |  sinboundsin            |gen_sine_AM_two              |   298|
+|40    |  sinefy                 |gen_sin_wave_12              |   147|
+|41    |  sinwave22              |gen_sin_wave_13              |   304|
+|42    |  sinwavedutycycle1      |gen_sin_wave2                |  3190|
+|43    |  squarefy               |operation_squarefy           |    38|
+|44    |  squarefy_invert        |operation_squarefy_invert    |    14|
+|45    |  squarewave1            |gen_square_wave              |   102|
+|46    |  squarewave22           |gen_square_wave_14           |    76|
+|47    |  ssd_anode1             |ssd_anode                    |    32|
+|48    |  ssd_cathode1           |ssd_cathode                  |    50|
+|49    |  trapwave1              |gen_trapezium_wave           |  1515|
+|50    |  trapwave22             |gen_trapezium_wave_15        |  1512|
+|51    |  triwave1               |gen_tri_wave                 |    74|
+|52    |  twofreqwire            |clock_divider_custom_wave_16 |  1107|
+|53    |  twofreqwire2           |clock_divider_custom_wave_17 |  1026|
+|54    |  u1                     |DA2RefComp                   |    83|
+|55    |  varfreq                |clock_divider_custom_wave_18 |   899|
++------+-------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:40 . Memory (MB): peak = 796.879 ; gain = 586.848
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 131 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 796.879 ; gain = 268.465
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:41 . Memory (MB): peak = 796.879 ; gain = 586.848
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4469 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:44 . Memory (MB): peak = 796.879 ; gain = 586.848
+INFO: [Common 17-1381] The checkpoint 'D:/Desktop/MyWork/EE2020_myDAC_square_gen_working.xpr/EE2020_myDAC_monday morning.xpr/EE2020_myDAC/EE2020_myDAC.runs/synth_1/myDAC_TOP.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 796.879 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 03 22:01:20 2017...

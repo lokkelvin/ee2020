@@ -1,0 +1,127 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Mon Apr 03 22:03:11 2017
+| Host         : BLACK-LAPTOP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file myDAC_TOP_control_sets_placed.rpt
+| Design       : myDAC_TOP
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    59 |
+| Unused register locations in slices containing registers |   155 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            3462 |         1261 |
+| No           | No                    | Yes                    |               1 |            1 |
+| No           | Yes                   | No                     |             446 |          135 |
+| Yes          | No                    | No                     |             206 |           78 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              34 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|            Clock Signal           |                                                Enable Signal                                                |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+|  HALF_CLOCK_BUFG                  |                                                                                                             | RESET_IBUF                                |                1 |              1 |
+|  HALF_CLOCK_BUFG                  |                                                                                                             |                                           |                2 |              2 |
+|  JA_OBUF_BUFG[3]                  |                                                                                                             |                                           |                1 |              2 |
+|  onehertz/CLK                     |                                                                                                             |                                           |                2 |              4 |
+|  cdssd1/SSD_CLOCK                 | ssd_anode1/pattern[3]_i_1_n_0                                                                               |                                           |                2 |              4 |
+|  JA_OBUF_BUFG[3]                  | u1/shiftCounter[3]_i_1_n_0                                                                                  | u1/LED_OBUF                               |                2 |              4 |
+|  JA_OBUF_BUFG[3]                  | u1/temp2_0                                                                                                  | u1/LED_OBUF                               |                2 |              7 |
+|  SLOWER_CLOCK_BUFG                | debounce_center/dff1/selected_wave0                                                                         | debounce_center/dff1/selected_wave_reg[7] |                3 |              7 |
+|  cd3/aclk_BUFG                    | sinboundsin/cordic_sin_faster/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr     |                                           |                4 |              8 |
+|  DDS_CLOCK2_BUFG                  | sinwave22/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr              |                                           |                3 |              8 |
+|  phase_freq_clock_BUFG            | rectsinwave1/PHASE_IN0_n_0                                                                                  | rectsinwave1/PHASE_IN[7]_i_1__4_n_0       |                2 |              8 |
+|  DDS_CLOCK2_BUFG                  | rectsinwave22/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr          |                                           |                3 |              8 |
+|  SLOWER_CLOCK_BUFG                | debounce_center/dff1/E[0]                                                                                   |                                           |                2 |              8 |
+|  sin_phase_accumulator2/CLK       | rectsinwave22/PHASE_IN0_n_0                                                                                 | rectsinwave22/PHASE_IN[7]_i_1__6_n_0      |                2 |              8 |
+|  DDS_CLOCK_BUFG                   | rectsinwave1/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr           |                                           |                1 |              8 |
+|  DDS_CLOCK_BUFG                   | fastsine1/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr              |                                           |                3 |              8 |
+|  DDS_CLOCK_BUFG                   | sinwavedutycycle1/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr      |                                           |                3 |              8 |
+|  DDS_CLOCK_BUFG                   | fastsine2/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr              |                                           |                3 |              8 |
+|  DDS_CLOCK_BUFG                   | sinaddsin/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr              |                                           |                3 |              8 |
+|  DDS_CLOCK_BUFG                   | sinboundsin/cordic_sin_slowerdown/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr |                                           |                4 |              8 |
+|  DDS_CLOCK_BUFG                   | sinboundsin/cordic_sin_slowerup/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr   |                                           |                3 |              8 |
+|  sinwavedutycycle1/phasefreqclock |                                                                                                             |                                           |                3 |              8 |
+|  cdssd1/SSD_CLOCK                 |                                                                                                             |                                           |                3 |              8 |
+|  cd1/DDS_CLOCK_BUFG               | sinefy/cordic_sin/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr                 |                                           |                3 |              8 |
+|  SLOWER_CLOCK_BUFG                |                                                                                                             | cwa1/hold_count[7]_i_1_n_0                |                2 |              8 |
+|  SLOWER_CLOCK_BUFG                |                                                                                                             | cwf1/hold_count[7]_i_1__0_n_0             |                3 |              8 |
+|  sin_phase_accumulator2/CLK       |                                                                                                             |                                           |                4 |             11 |
+|  var_freq_clock_BUFG              |                                                                                                             | squarefy/on                               |                4 |             12 |
+|  var_freq_clock_BUFG              |                                                                                                             | squarefy_invert/on_i_1__1_n_0             |                4 |             12 |
+|  onehertz/CLK                     | display_freq_amp/combinedisplay[11]_i_1__0_n_0                                                              |                                           |                5 |             12 |
+|  onehertz/CLK                     | display_freq_amp2/combinedisplay[11]_i_1_n_0                                                                |                                           |                5 |             12 |
+|  DDS_CLOCK_BUFG                   | trapwave1/trapwavetemp                                                                                      |                                           |                6 |             12 |
+|  DDS_CLOCK2_BUFG                  | cwa1/E[0]                                                                                                   |                                           |                6 |             12 |
+|  twofreqwire/CLK                  |                                                                                                             |                                           |                9 |             13 |
+|  twofreqwire2/CLK                 |                                                                                                             |                                           |                9 |             13 |
+|  DDS_CLOCK_BUFG                   |                                                                                                             | sawtooth1/p_3_in                          |                5 |             20 |
+|  DDS_CLOCK2_BUFG                  |                                                                                                             | sawtooth22/p_3_in                         |                5 |             20 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | cd1/COUNT[27]_i_1_n_0                     |                7 |             27 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | cd3/clear                                 |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | cd2/clear                                 |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | sinwavedutycycle1/clear                   |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | cd4/clear                                 |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | onehertz/clear                            |                7 |             28 |
+|  JA_OBUF_BUFG[3]                  | u1/temp2_0                                                                                                  |                                           |               13 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | sin_phase_accumulator/clear               |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | sin_phase_accumulator2/clear              |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | twofreqwire/clear                         |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | twofreqwire2/clear                        |                7 |             28 |
+|  CLK_IBUF_BUFG                    |                                                                                                             | varfreq/clear                             |                7 |             28 |
+|  HALF_CLOCK_BUFG                  | debounce_center/dff2/display_timer_reg_0__s_net_1                                                           |                                           |                8 |             32 |
+|  phase_freq_clock_BUFG            |                                                                                                             |                                           |               10 |             35 |
+|  var_freq_clock_BUFG              |                                                                                                             |                                           |               11 |             39 |
+|  CLK_IBUF_BUFG                    |                                                                                                             |                                           |               25 |             54 |
+|  SLOWER_CLOCK_BUFG                |                                                                                                             | RESET_IBUF                                |               35 |             59 |
+|  SLOWER_CLOCK_BUFG                |                                                                                                             |                                           |              114 |            192 |
+|  cd1/DDS_CLOCK_BUFG               |                                                                                                             |                                           |               91 |            263 |
+|  cd3/aclk_BUFG                    |                                                                                                             |                                           |               89 |            263 |
+|  DDS_CLOCK2_BUFG                  |                                                                                                             |                                           |              220 |            602 |
+|  DDS_CLOCK_BUFG                   |                                                                                                             |                                           |              692 |           2008 |
++-----------------------------------+-------------------------------------------------------------------------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     2 |
+| 4      |                     3 |
+| 7      |                     2 |
+| 8      |                    18 |
+| 11     |                     1 |
+| 12     |                     6 |
+| 13     |                     2 |
+| 16+    |                    24 |
++--------+-----------------------+
+
+
